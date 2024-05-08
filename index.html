@@ -39,6 +39,10 @@
       </style>
 </head>
 <body>
+    <audio id="myAudio">
+        <source src="assets/song/music-1.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
     <div class="container">
         <div class="envelope-wrapper">
             <div class="envelope">
@@ -46,7 +50,7 @@
                     <div class="text" style="display: flex;">
                         <img src="assets/img/music-1.jpg" alt="" class="circular-image" style="flex: 0 0 auto;">
                         <div style="flex: 1; flex-order: -1;">  
-                            <strong>Lucero Villagomez</strong>
+                            <strong>Lucero Villagómez</strong>
                             <p style="text-align: justify;  font-size: 10px;">
                                 Hoy es tu día, y quiero que sepas lo especial que eres para todos nosotros. 
                                 Tu sonrisa, tu compasión y tu profesionalismo marcan la diferencia en la vida de tantas personas.
@@ -62,9 +66,18 @@
     </div>
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
+        const audio = document.getElementById("myAudio");
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
+            if (audio.paused) {
+                audio.play();
+            } 
+            else {
+                audio.pause();
+            }
+            
         });
+
     </script>
 </body>
 </html>
