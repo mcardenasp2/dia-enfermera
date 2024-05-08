@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <title></title>
     <link rel="stylesheet" href="./style.css">
+
+    <style>
+        /* Estilos para hacer la imagen circular */
+        .circular-image {
+          border-radius: 50%;
+          width: 50px; /* Tamaño pequeño definido */
+          height: 50px; /* Tamaño pequeño definido */
+          object-fit: cover;
+          margin-right: 5px; /
+        }
+      
+        /* Estilos para hacer la imagen responsive */
+        /* @media (max-width: 768px) {
+          .circular-image {
+            width: 50px; 
+            height: 50px;
+          }
+        } */
+      </style>
 </head>
 <body>
     <div class="container">
         <div class="envelope-wrapper">
             <div class="envelope">
                 <div class="letter">
-                    <div class="text">
-                        <strong>Dear Person.</strong>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Numquam labore omnis minus maiores laboriosam, facere in beatae esse. 
-                        </p>
-                    </div>
+                    <div class="text" style="display: flex;">
+                        <img src="assets/img/music-1.jpg" alt="" class="circular-image" style="flex: 0 0 auto;">
+                        <div style="flex: 1; flex-order: -1;">  
+                            <strong>Lucero Villagomez</strong>
+                            <p style="text-align: justify;">
+                                Hoy es tu día, y quiero que sepas lo especial que eres para todos nosotros. 
+                                Tu sonrisa, tu compasión y tu profesionalismo marcan la diferencia en la vida de tantas personas.
+                            </p>
+                        </div>
+                      </div>
+                      
+                      
                 </div>
             </div>
             <div class="heart"></div>

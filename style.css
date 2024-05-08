@@ -6,16 +6,19 @@
   --envelope-cover: #e6cfa7;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --txt-color: #444;
-  --heart-color: rgb(252, 8, 231);
+  --heart-color: rgb(81, 206, 255);
 }
 body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: var(--bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: url('assets/img/libra2.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100vh; /* Hace que el cuerpo ocupe el 100% de la altura de la ventana */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+  display: flex; /* Utiliza Flexbox para centrar el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
 }
 .container {
   height: 100vh;
