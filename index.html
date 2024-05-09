@@ -50,10 +50,9 @@
                     <div class="text" style="display: flex;">
                         <img src="assets/img/music-1.jpg" alt="" class="circular-image" style="flex: 0 0 auto;">
                         <div style="flex: 1; flex-order: -1;">  
-                            <strong>Lucero Villagómez</strong>
-                            <p style="text-align: justify;  font-size: 10px;">
-                                Hoy es tu día, y quiero que sepas lo especial que eres para todos nosotros. 
-                                Tu sonrisa, tu compasión y tu profesionalismo marcan la diferencia en la vida de tantas personas.
+                            <strong style="font-size: 8px;">❤️ Lucero Villagomez 👩‍⚕️</strong>
+                            <p style="text-align: justify;  font-size: 8px;">
+                                Hoy, en tu día, quiero que sepas cuán especial eres para todos nosotros. Tu sonrisa, tu compasión y tu profesionalismo marcan la diferencia en la vida de tantas personas, incluida la tuya. ¡Gracias por ser una luz en la oscuridad! 💉 🩺 🏥  🩹 🚑
                             </p>
                         </div>
                       </div>
@@ -67,12 +66,15 @@
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
         const audio = document.getElementById("myAudio");
+        let flag = false ;
+
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
-            if (audio.paused) {
+            flag = !flag ;
+
+            if(flag && audio.paused){
                 audio.play();
-            } 
-            else {
+            }else{
                 audio.pause();
             }
             
